@@ -1,0 +1,21 @@
+legend{
+    text-align: center;
+    color: blue;
+}
+button{
+    margin-left: 43%
+}
+#i1{
+    background: linear-gradient(to bottom, #11f81d21 ,  #0449f036 , #f332196b);
+    background-image: url(https://i.postimg.cc/W321Nkfv/1000-F-458639966-J8-TDPj-Da-Kswqhwhbyl-C3m-UKQW2f616h-P.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+p{
+    color: rgb(242, 242, 247);
+}
+#check1{
+    color: aliceblue;
+}

@@ -1,0 +1,36 @@
+<br><br>
+<h3>{{data}}</h3>
+<div id="i1" class="card container" style="width: 60%;">
+  <div class="card-body">
+    <form>
+      <!-- <fieldset disabled> -->
+      <legend>HAVE A SAFE BANKING ...</legend>
+      <div class="mb-3"><br>
+        <label id="u1" for="disabledTextInput" class="form-label">Username</label>
+        <input (change)="acnoChange($event)" id="input1" type="text" id="disabledTextInput" class="form-control" [placeholder]="data2">
+      </div>
+      <div class="mb-3">
+        <label id="p1" for="disabledTextInput" class="form-label">Password</label>
+        <input (change)="passChange($event)" id="input2" type="password" id="disabledTextInput" class="form-control" placeholder="Password">
+
+      </div><br>
+      <div class="mb-3">
+        <div class="form-check">
+
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            <h6>
+              <p>If you are new : <br> <a id="link1" style="text-decoration:none" href="http://"> Create a new
+                  account</a></p>
+            </h6>
+            <h6><a id="link1" style="text-decoration:none" href="http://"> Forgot Password</a></h6>
+
+          </label>
+        </div>
+      </div><br>
+
+      <button (click)="login()" type="submit" class="btn btn-primary">login</button>
+
+      <!-- </fieldset> -->
+    </form>
+  </div>
+</div><br><br>

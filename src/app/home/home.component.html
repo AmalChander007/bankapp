@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Sidebar HTML and CSS| CodingNepal</title>
+  <!-- Linking Google font link for icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+
+<body>
+  <aside class="sidebar">
+
+    <ul class="links">
+      <h4>Main Menu</h4>
+      <li>
+        <span class="material-symbols-outlined">Home</span>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">Balance</span>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal">Account Balance</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">money</span>
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Money
+          Transfer</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">bar_chart</span>
+        <a href="#">Account Statement</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">call</span>
+        <a href="#">Coustomer Care </a>
+      </li>
+
+      <hr>
+      <h4>Account</h4>
+      <li><a data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class='bx bxs-user'></i>View Profile</a></li>
+      <li>
+        <span class="material-symbols-outlined">delete</span>
+        <a href="#">Delete Account</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">settings</span>
+        <a href="#">Settings</a>
+      </li>
+      <li class="logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="#">Logout</a>
+      </li>
+    </ul>
+  </aside>
+
+
+
+  <!-- account balance -->
+  <div class="modal fade col-lg-4 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog ">
+
+      <div class="modal-content ">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title " id="exampleModalLabel">Hello Dhashamoolam</h2>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+
+        <img src="https://i.postimg.cc/MH3Jtjxm/piggy-removebg-preview.png" alt="">
+
+        <div class="modal-body">
+          <h4> The Current Available balance your Account Number <span class="spn">123456789</span> is </h4>
+
+        </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- money transfer -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title container" id="offcanvasExampleLabel">Online Money Transfer</h1>
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+    </div>
+    <div class="offcanvas-body container"><br>
+      <div>
+        <form>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Recipient Account Number</label>
+            <input type="number" class="form-control">
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">IFSC Code</label>
+            <input type="text" class="form-control">
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Amount</label>
+            <input type="number" class="form-control">
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary">Send Money</button>
+        </form>
+      </div>
+      <!-- <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div> -->
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <!-- Profile -->
+  <!-- Modal for Profile view -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Profile</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Hello Shilpa</p>
+        <p>Account Number:1234</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
